@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+        .container {
+            width: 300px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+           
+        }
+        .option {
+            margin-bottom: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .option.selected {
+            border-color: red;
+	    background-color: #FFD7C7;
+           
+        }
+        .discount {
+            color: black;
+            font-size: 14px;
+	    text-align: right;
+	    float:right;
+	    font-weight:bold;
+        }
+        .total {
+            font-weight: bold;
+            font-size: 18px;
+        }
+        .button {
+            background-color:RED;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+	    width:100%;
+        }
+
+	.highlight{
+	background-color: #FF0000;
+ 	color: white;
+	font-size: 12px;
+	}
+        .original-price {
+            text-decoration: line-through;
+            color: #808080 ;
+	   font-size: 10px;    
+        }
+    </style>
+</head>
+
+<body>
+   <div class="container">
+	<h3 style="color: red; text-align: center;">YAY! It's BOGO</h3>
+
+	 <div class="option">
+            <input type="radio" id="radio1" name="pair" value="radio1">
+            <label><b>1 Unit</b> <span class="highlight">10% Off </span> 
+	  <span class="discount" style ="text-aligh: right">$10.00 USD <br><span class="original-price">$24.00 USD</span></span>
+		<br> Standard Price </label>
+        </div>
+
+
+        <div class="option selected">
+            <input type="radio" id="radio2" name="pair" value="radio2" checked>
+                <label><b>2 Unit</b> <span class="highlight">20% Off </span> 
+	  	<span class="discount" style ="text-aligh: right">$18.00 USD <br><span class="original-price">$24.00 USD</span></span>
+		
+            <div>
+	        <br><label for="size1">&nbsp Size</label>
+                <label for="colour1">&nbsp &nbsp Colour</label> <br> 
+               <span style="font-size: 10px;">#1 </span>
+		<select id="size1">
+                    <option value="S">S</option>
+                </select>
+                <select id="colour1">
+                    <option value="colour">colour</option>
+                </select>
+                <br>
+                
+                <span style="font-size: 10px;">#2 </span> 
+		<select id="size2">
+                    <option value="S">S</option>
+                </select>
+                
+                <select id="colour2">
+                    <option value="colour">colour</option>
+                </select>
+            </div>
+        </div>
+        <div class="option">
+            <input type="radio" id="radio1" name="pair" value="radio1">
+            <label><b>3 Unit</b> <span class="highlight">30% Off </span> 
+	  <span class="discount" style ="text-aligh: right">$24.00 USD <br><span class="original-price">$24.00 USD</span></span>
+		<br> Standard Price </label>
+        </div>
+        <p><span style=" color :red">Free Delivery<span class="discount" ><b>$18.00 USD</b></span></span></p>
+       <br>
+        <button class="button">+ Add to Cart</button>
+<br><span class="discount" style ="color:gray;font-size: 11px;"><I>@powered by pumper</I></span>
+    </div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
